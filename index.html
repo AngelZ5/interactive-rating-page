@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >Coded by <a href="#">Angel Silva de Santana</a>.
+    </div>
+
+    <div class="cube">
+      <h1>How did we do?</h1>
+
+      <p>
+        Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!
+      </p>
+      <ul class="rating-list">
+        <li class="rating-item" onclick="selectRating(1)"><span>1</span></li>
+        <li class="rating-item" onclick="selectRating(2)"><span>2</span></li>
+        <li class="rating-item" onclick="selectRating(3)"><span>3</span></li>
+        <li class="rating-item" onclick="selectRating(4)"><span>4</span></li>
+        <li class="rating-item" onclick="selectRating(5)"><span>5</span></li>
+      </ul>
+      <button id="submit" onclick="sendRating()">SUBMIT</button>
+    </div>
+
+    <div class="star">
+      <svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z"
+          fill="#FC7614"
+        />
+      </svg>
+    </div>
+    <div class="circle"></div>
+    <script>
+      const ratingItems = document.querySelectorAll(".rating-item");
+
+      ratingItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          ratingItems.forEach((item) => {
+            item.classList.remove("active");
+          });
+
+          item.classList.add("active");
+        });
+      });
+
+      const submit = document.getElementById("submit");
+
+      function sendRating() {
+        window.location.href = "thanks.html";
+      }
+
+      let selectedRating = null;
+
+      function selectRating(rating) {
+        selectedRating = rating;
+      }
+
+      function sendRating() {
+        if (selectedRating !== null) {
+          window.location.href = "thanks.html?rating=" + selectedRating;
+        } else {
+          alert("Please select a rating before sending.");
+        }
+      }
+    </script>
+  </body>
+</html>

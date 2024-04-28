@@ -1,0 +1,83 @@
+body {
+  background-color: #141519;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.cube {
+  background-image: linear-gradient(
+    to right,
+    #212832 0%,
+    #1c232d 34.52380895614624%,
+    #171e28 69.04761791229248%,
+    #171e28 84.52380895614624%,
+    #171e28 100%
+  );
+
+  width: 440px;
+  height: 430px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.youselected {
+  z-index: 2;
+  position: absolute;
+  left: 109px;
+  bottom: 215px;
+  color: #f87817;
+}
+
+.thankyou {
+  position: absolute;
+  top: 250px;
+  right: 140px;
+  margin-top: auto;
+  padding-left: 30px;
+  color: white;
+  font-family: "overpass";
+}
+
+#yourrating {
+  z-index: 2;
+  position: absolute;
+  left: 197px;
+  bottom: 215px;
+  color: #f87817;
+}
+
+.info-bg {
+  position: absolute;
+  right: 117px;
+  top: 170px;
+  background-color: #262f38;
+  width: 210px;
+  height: 30px;
+  border-radius: 50px;
+}
+
+.container {
+  position: absolute;
+  top: 120px;
+  left: 10px;
+}
+
+.container p {
+  text-align: center;
+}
+
+.cube svg {
+  position: absolute;
+  right: 150px;
+  top: 50px;
+}
+
+.outoffive {
+  z-index: 2;
+  left: 209px;
+  bottom: 216px;
+  color: #f87817;
+}
