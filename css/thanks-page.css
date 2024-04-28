@@ -81,3 +81,41 @@ body {
   bottom: 216px;
   color: #f87817;
 }
+
+@media (max-width: 450px) {
+  body {
+    position: relative;
+    right: 13px;
+  }
+  .cube svg {
+    left: 80px;
+  }
+  h1 {
+    width: 166px;
+    left: 50px;
+  }
+  p {
+    position: absolute;
+    left: -15px;
+  }
+
+  .info-bg {
+    width: 180px;
+    right: 80px;
+  }
+
+  .youselected {
+    left: 55px;
+    bottom: 206px;
+  }
+
+  #yourrating {
+    left: 141px;
+    bottom: 205.5px;
+  }
+
+  .outoffive {
+    left: 153px;
+    bottom: 207px;
+  }
+}
