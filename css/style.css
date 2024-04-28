@@ -147,7 +147,7 @@ h1 {
     text-align: center;
     color: white;
     position: absolute;
-    bottom: -30px;
+    top: 235px;
   }
 
   .rating-list {
@@ -174,5 +174,10 @@ h1 {
     right: 355px;
     bottom: 153px;
     z-index: 2;
+  }
+
+  #submit {
+    position: relative;
+    left: 30px;
   }
 }
