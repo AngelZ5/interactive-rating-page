@@ -150,12 +150,12 @@ h1 {
   }
 
   .attribution {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     text-align: center;
     color: white;
     position: absolute;
-    top: 15px;
-    right: 42px;
+    top: 50px;
+    right: 55px;
   }
 
   .rating-list {
