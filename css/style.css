@@ -62,10 +62,10 @@ h1 {
   z-index: 2;
 }
 
-.circle {
+.cube .circle {
   position: absolute;
-  top: 220px;
-  left: 550px;
+  bottom: 342px;
+  right: 358.5px;
   background-color: #262f38;
   height: 50px;
   width: 50px;
