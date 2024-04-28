@@ -123,3 +123,56 @@ h1 {
   color: #f87817;
   transition: background-color 0.3s, color 0.3s;
 }
+
+@media (max-width: 450px) {
+  .cube {
+    background-image: linear-gradient(
+      to right,
+      #212832 0%,
+      #1c232d 34.52380895614624%,
+      #171e28 69.04761791229248%,
+      #171e28 84.52380895614624%,
+      #171e28 100%
+    );
+
+    width: 4200px;
+    height: 430px;
+    border-radius: 20px;
+    position: relative;
+    left: 18px;
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: -30px;
+  }
+
+  .rating-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    position: relative;
+    left: 20px;
+    top: 275px;
+  }
+
+  .cube .circle {
+    position: absolute;
+    bottom: 345px;
+    right: 340px;
+    background-color: #262f38;
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+  }
+
+  .star {
+    position: relative;
+    right: 355px;
+    bottom: 153px;
+    z-index: 2;
+  }
+}
